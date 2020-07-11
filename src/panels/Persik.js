@@ -7,7 +7,7 @@ import PanelHeaderButton from '@vkontakte/vkui/dist/components/PanelHeaderButton
 import Icon28ChevronBack from '@vkontakte/icons/dist/28/chevron_back';
 import Icon24Back from '@vkontakte/icons/dist/24/back';
 
-import persik from '../img/persik.png';
+// import persik from '../img/persik.png';
 import './Persik.css';
 
 const osName = platform();
@@ -19,9 +19,9 @@ const Persik = props => (
 				{osName === IOS ? <Icon28ChevronBack/> : <Icon24Back/>}
 			</PanelHeaderButton>}
 		>
-			Persik
+			Работа
 		</PanelHeader>
-		<img className="Persik" src={persik} alt="Persik The Cat"/>
+		<img className="Persik" src='https://i.pinimg.com/564x/e9/b9/19/e9b91905d33309fea5dcd6112ad6a63d.jpg' alt="Persik The Cat"/>
 	</Panel>
 );
 

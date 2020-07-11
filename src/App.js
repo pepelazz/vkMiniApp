@@ -6,6 +6,7 @@ import '@vkontakte/vkui/dist/vkui.css';
 
 import Home from './panels/Home';
 import Persik from './panels/Persik';
+import QrCode from './panels/QrCode';
 
 const App = () => {
 	const [activePanel, setActivePanel] = useState('home');
@@ -36,6 +37,7 @@ const App = () => {
 		<View activePanel={activePanel} popout={popout}>
 			<Home id='home' fetchedUser={fetchedUser} go={go} />
 			<Persik id='persik' go={go} />
+			<QrCode id='qrCode' go={go} />
 		</View>
 	);
 }
